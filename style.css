@@ -15,21 +15,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-family: 'Outfit';
 }
 
 .recipe-box{
     background-color: var(--color-white);
-    width: 60%;
-    padding: 3%;
-    border-radius: 2%;  
+    width: 864px;
+    padding: 40px;
+    border-radius: 20px;  
 }
 
 img{
-    width: 100%;
-    border-radius: 2%;
+    width: 864px;
+    border-radius: 20px;  
 }
 
 strong{
@@ -62,38 +62,38 @@ h3{
 .preparation-time{
     background-color: var(--color-rose-50);
     align-items: center;
-    border-radius: 2%;
+    border-radius: 20px;
     text-align: left;
-    padding-left: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 ::marker{
     color: var(--color-rose-800);
-    padding: 2%;
+    padding: 20px;
 }
 
 li{
-    padding: 2%;
-    padding-bottom: 0%;
-    padding-top: 1%;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 10px;
 }
 
-.Line{
+.line{
     border-bottom: 1px solid var(--color-stone-150); 
 }
 
 ul{
     font-weight: 400;
     color: var(--color-stone-600);
-    padding: 2%;
-    padding-top: 0%;
+    padding: 20px;
+    padding-top: 0px;
 }
 
 ol{
-    padding: 2%;
-    padding-top: 0%;
+    padding: 20px;
+    padding-top: 0px;
     font-weight: 400;     
     color: var(--color-stone-600);
 }
@@ -104,16 +104,16 @@ tbody{
 
 th{
     text-align: left;
-    padding: 2%;
+    padding: 20px;
     font-weight: normal;
-    width: 50%;
+    width: 432px !important;
 }
 
 td{
     text-align: left;
     color: var(--color-brown-800);
     font-weight: bold;
-    width: 50%;
+    width: 432px !important;
 }
 
 tr{
@@ -122,7 +122,7 @@ tr{
 
 .nutrition-table{
     border-collapse: collapse;
-    width: 100%;
+    width: 864px;
 }
 
 @media screen and (max-width: 375px) {
@@ -132,30 +132,53 @@ tr{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        margin: 0%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin: 0px;
     }
     
     .recipe-box{
         background-color: var(--color-white);
-        width: 100%;
-        border-radius: 0%;
-        padding: 0%;
+        width: 375px;
+        border-radius: 0px;
+        padding: 0px;
     }
 
     img{
-        border-radius: 0%;
-    } 
+        width: 375px;
+        border-radius: 0px;  
+    }
 
     .container{
-        padding: 10%;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding: 30px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
 
     .preparation-time{
-        padding: 10%;
-        margin: 5%;
+        padding: 37px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20px;
     }
+
+    .nutrition-table{
+        border-collapse: collapse;
+        width: 315px;
+    }
+
+    th{
+        text-align: left;
+        padding: 8px;
+        width: 120px;
+        font-weight: normal;
+    }
+    
+    td{
+        text-align: left;
+        color: var(--color-brown-800);
+        font-weight: bold;
+        width: 120px;
+    }
+
 }
